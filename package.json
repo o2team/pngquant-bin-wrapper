@@ -1,0 +1,45 @@
+{
+  "name": "pngquant-bin-wrapper",
+  "version": "0.0.1",
+  "description": "`pngquant` wrapper that makes it seamlessly available as a local dependency",
+  "license": "MIT",
+  "repository": "o2team/pngquant-bin-wrapper",
+  "author": {
+    "name": "luckyadam",
+    "email": "weitaozsh@gmail.com",
+    "url": "github.com/luckyadam"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "postinstall": "node lib/install.js",
+    "test": "ava"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "imagemin",
+    "compress",
+    "image",
+    "img",
+    "minify",
+    "optimize",
+    "png",
+    "pngquant"
+  ],
+  "dependencies": {
+    "bin-build": "^2.2.0",
+    "bin-wrapper": "^3.0.0",
+    "logalot": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "bin-check": "^4.0.1",
+    "compare-size": "^3.0.0",
+    "execa": "^0.6.3",
+    "tempy": "^0.1.0"
+  }
+}
